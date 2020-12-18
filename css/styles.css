@@ -115,6 +115,12 @@ h1 {
 
 /*стартовая страница*/
 /*герой*/
+
+.hero > .container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .hero,
 .main-title {
   font-weight: 900;
@@ -127,12 +133,12 @@ h1 {
   background-color: var(--footer-bg-color);
 }
 .main-title {
-  padding-top: 200px;
   padding-left: 237px;
   padding-right: 237px;
 }
 /* кнопка в герое*/
 .hero-button {
+  margin-top: 30px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -185,7 +191,16 @@ h1 {
   letter-spacing: 0.03em;
   color: #757575;
 }
-/*наши занятия главная страница*/
+/*чем занимаемся. главная страница*/
+
+.our-business {
+  text-align: center;
+}
+
+.business-pict {
+  display: flex;
+  margin-left: auto;
+}
 .our-business .team,
 h2 {
   font-weight: 700;
@@ -207,7 +222,7 @@ h2 {
   letter-spacing: 0.03em;
   color: #757575;
 }
-/* страницапортфолио*/
+/* страница портфолио*/
 main {
   background-color: var(--main-bg-color);
 }
