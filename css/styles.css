@@ -20,6 +20,13 @@ li {
   list-style: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
 .container {
   width: 1170px;
   margin-left: auto;
@@ -59,7 +66,7 @@ h1 {
   color: #000000;
 }
 .web {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 /*ссылки навигации*/
 .nav-links {
@@ -80,20 +87,22 @@ h1 {
 }
 .nav-link:focus,
 .nav-link:hover {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .nav-link.current {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
+/* имейл и  телефон */
 .header-contacts {
   display: flex;
   margin-left: auto;
 }
-.header-contacts > .contact-item:not(:last-child) {
+.header-contacts > li:not(:last-child) {
   margin-right: 50px;
 }
 .header-contact {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -101,7 +110,7 @@ h1 {
 }
 .header-contact:focus,
 .header-contact:hover {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /*стартовая страница*/
@@ -116,6 +125,11 @@ h1 {
   text-transform: uppercase;
   color: var(--header-bg-color);
   background-color: var(--footer-bg-color);
+}
+.main-title {
+  padding-top: 200px;
+  padding-left: 237px;
+  padding-right: 237px;
 }
 /* кнопка в герое*/
 .hero-button {
