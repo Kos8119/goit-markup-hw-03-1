@@ -5,7 +5,7 @@
   --accent-color: #2196f3;
   --text-color: #212121;
 }
-
+/* общие */
 body,
 body address {
   font-family: Roboto, sans-serif;
@@ -15,16 +15,29 @@ body address {
 a {
   text-decoration: none;
 }
+
 li {
   list-style: none;
+}
+
+.container {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
 }
 /* хедер */
 header {
   background-color: var(--header-bg-color);
 }
+header > .container {
+  display: flex;
+  align-items: center;
+}
 ul {
   margin-top: 0;
   margin-bottom: 0;
+  padding-left: 0;
 }
 
 h1 {
@@ -32,6 +45,9 @@ h1 {
   margin-bottom: 0;
 }
 /*логотип вебстудия*/
+.logo {
+  margin-right: 93px;
+}
 .web,
 .studio {
   font-family: Raleway;
@@ -46,7 +62,16 @@ h1 {
   color: #2196f3;
 }
 /*ссылки навигации*/
+.nav-links {
+  display: flex;
+}
+.nav-links > .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .nav-link {
+  display: block;
+  padding: 32px 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -60,14 +85,22 @@ h1 {
 .nav-link.current {
   color: #2196f3;
 }
+
 .header-contacts {
+  display: flex;
+  margin-left: auto;
+}
+.header-contacts > .contact-item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-contact {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   color: #757575;
 }
-.header-contacts:focus,
-.header-contacts:hover {
+.header-contact:focus,
+.header-contact:hover {
   color: #2196f3;
 }
 
