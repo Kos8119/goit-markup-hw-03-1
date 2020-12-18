@@ -149,6 +149,28 @@ h1 {
 }
 
 /*наши особенности главная страница*/
+.peculiarities {
+  display: flex;
+  margin-left: auto;
+  padding-top: 94px;
+  margin-bottom: 94px;
+}
+
+.peculiarities > li:not(:last-child) {
+  margin-right: 30px;
+}
+.p-item {
+  width: 270px;
+}
+
+.p-item > p {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.p-item > h3 {
+  margin: 0;
+}
 .peculiarities h3 {
   font-weight: 700;
   font-size: 14px;
