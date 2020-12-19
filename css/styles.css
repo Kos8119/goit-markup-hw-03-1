@@ -138,6 +138,7 @@ h1 {
 }
 /* кнопка в герое*/
 .hero-button {
+  display: inline-block;
   margin-top: 30px;
   font-weight: 700;
   font-size: 16px;
@@ -148,10 +149,21 @@ h1 {
   color: var(--text-color);
   background-color: var(--main-bg-color);
 }
+
+/*.button {
+  width: auto;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 73px;
+}*/
+
 .button:focus,
 .button:hover {
   color: var(--header-bg-color);
   background-color: var(--accent-color);
+  cursor: pointer;
 }
 
 /*наши особенности главная страница*/
@@ -193,11 +205,6 @@ h1 {
 }
 /*чем занимаемся. главная страница*/
 
-/*.our-business {
-  text-align: center;
-  margin-bottom: 50px;
-} */
-
 .business-pict {
   display: flex;
   margin-left: auto;
@@ -222,9 +229,7 @@ h2 {
 }
 
 /* наша команда */
-/* .team {
-  text-align: center;
-} */
+
 .team-cards {
   display: flex;
   padding-bottom: 94px;
@@ -264,6 +269,8 @@ main {
 }
 /* кнопки карточек */
 .buttons {
+  display: flex;
+  justify-content: center;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -271,14 +278,27 @@ main {
   letter-spacing: 0.03em;
   color: var(--text-color);
   background-color: var(--main-bg-color);
+  cursor: pointer;
 }
 
 .button:focus,
 .button:hover {
-  color: #ffffff;
+  color: var(--header-bg-color);
   background-color: var(--accent-color);
 }
+
+.buttons > li:not(:last-child) {
+  margin-right: 8px;
+}
+
 /* карточки портфолио*/
+.pf-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  /*width: calc((100%-60px) / 3);*/
+}
+
 .pf-cards h3 {
   font-weight: 700;
   font-size: 18px;
