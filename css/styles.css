@@ -231,8 +231,7 @@ h2 {
 }
 .team-cards > li {
   background-color: var(--header-bg-color);
-  border: 2px;
-  border-radius: 4px;
+  border-radius: 0px 0px 4px 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .team-cards > li:not(:last-child) {
@@ -241,6 +240,7 @@ h2 {
 
 .team-cards h3 {
   margin-top: 30px;
+  margin-bottom: 0;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
@@ -249,6 +249,7 @@ h2 {
 }
 .team-cards p {
   margin-top: 10px;
+  margin-bottom: 30px;
   text-align: center;
   font-weight: 400;
   font-size: 16px;
@@ -297,6 +298,10 @@ main {
 footer {
   background-color: var(--footer-bg-color);
 }
+.f-container {
+  padding-top: 60px;
+}
+
 .f-studio {
   font-family: Raleway;
   font-style: normal;
@@ -305,6 +310,13 @@ footer {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--header-bg-color);
+}
+.f-contacts {
+  margin-top: 20px;
+  padding-bottom: 60px;
+}
+.f-contacts > li:not(:first-child) {
+  padding-top: 9px;
 }
 .address {
   font-weight: 400;
