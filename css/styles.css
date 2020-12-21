@@ -28,7 +28,7 @@ li {
   margin: -1px;
 }
 .container {
-  width: 1270px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
@@ -36,6 +36,7 @@ li {
 /* хедер */
 header {
   background-color: var(--header-bg-color);
+  border-bottom: 1px solid var(--main-bg-color);
 }
 header > .container {
   display: flex;
@@ -272,7 +273,6 @@ main {
   justify-content: center;
   padding-top: 94px;
   padding-bottom: 50px;
-  border-top: 2px solid var(--main-bg-color);
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
