@@ -121,7 +121,7 @@ img {
 /*стартовая страница*/
 /*герой*/
 
-.hero > .container {
+.hero {
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -167,11 +167,13 @@ img {
 }
 
 /*наши особенности главная страница*/
+.our-peculiarities {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .peculiarities {
   display: flex;
   margin-left: auto;
-  padding-top: 94px;
-  margin-bottom: 94px;
 }
 
 .peculiarities > li:not(:last-child) {
@@ -204,22 +206,24 @@ img {
   color: #757575;
 }
 /*чем занимаемся. главная страница*/
+.b-features {
+  padding-top: 0;
+  padding-bottom: 94px;
+}
 
 .business-pict {
   display: flex;
   margin-left: auto;
+  padding-top: 50px;
 }
 
-.business-pict > li {
-  margin-bottom: 94px;
-}
 .business-pict > li:not(:last-child) {
   margin-right: 30px;
 }
 .our-business .team,
 h2 {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 0;
   margin-top: 0;
   font-weight: 700;
   font-size: 36px;
@@ -229,10 +233,15 @@ h2 {
 }
 
 /* наша команда */
-
+.stuff-cards {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team {
+  padding-bottom: 50px;
+}
 .team-cards {
   display: flex;
-  padding-bottom: 94px;
 }
 .team-cards > li {
   background-color: var(--header-bg-color);
@@ -349,6 +358,8 @@ main {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
 }
 /*футер*/
 footer {
