@@ -272,7 +272,7 @@ main {
 .buttons {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
+  /*padding-top: 94px;*/
   padding-bottom: 50px;
   font-family: inherit;
   font-weight: 500;
@@ -296,13 +296,15 @@ main {
 
 /* карточки портфолио*/
 .portfolio-cards {
-  padding-bottom: 270px;
+  padding-top: 94px;
+  padding-bottom: 297px;
 }
 .pf-cards {
   display: flex;
   flex-wrap: wrap;
   margin-left: auto;
-  width: calc((100%-60px) / 3);
+
+  /*width: calc((100%-60px) / 3); */
 }
 .pf-cards > li {
   margin-right: 30px;
@@ -313,6 +315,10 @@ main {
 
 .pf-cards > li:nth-child(3n) {
   margin-right: 0;
+}
+
+.pf-cards > li:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
 
 .pf-cards h3 {
@@ -346,10 +352,9 @@ main {
 }
 /*футер*/
 footer {
-  background-color: var(--footer-bg-color);
-}
-.f-container {
   padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--footer-bg-color);
 }
 
 .f-studio {
@@ -363,7 +368,6 @@ footer {
 }
 .f-contacts {
   margin-top: 20px;
-  padding-bottom: 60px;
 }
 .f-contacts > li:not(:first-child) {
   padding-top: 9px;
