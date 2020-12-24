@@ -344,6 +344,7 @@ main {
 .pf-cards p {
   margin-top: 0;
   margin-right: 0;
+  margin-bottom: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
